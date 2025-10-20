@@ -19,5 +19,6 @@ RUN gcc -O2 -Wall -Wextra \
     -I./flir_sdk/include -L./flir_sdk/lib \
     -o /app/flir2json ./src/main.c -latlas_c_sdk
 
-# Comando padrão (ajuste para teste sem abrir janelas)
-CMD ["echo", "FLIR2JSON compilado com sucesso. Container rodando!"]
+# Comando de inicialização - mantém o container vivo
+CMD tail -f /dev/null
+
