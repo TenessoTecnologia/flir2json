@@ -19,4 +19,4 @@ RUN gcc -O2 -Wall -Wextra \
     -o /app/flir2json ./src/main.c -latlas_c_sdk || true
 
 EXPOSE 8080
-CMD ["python3", "/app/server.py"]
+CMD ["python3", "/app/server.c"]
