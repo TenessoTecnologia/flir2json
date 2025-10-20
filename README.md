@@ -1,1 +1,0 @@
-# flir2json
